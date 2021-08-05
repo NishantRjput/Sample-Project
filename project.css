@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 16 px --> 100%
+    10 px --> 62.5% */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100vw;
+    height: 95vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/header-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding-left: 1em;
+    font-weight: bold;
+}
+
+.header-part {
+    display: flex;
+    /* border: 2px solid white; */
+    position: relative;
+    align-items: center;
+}
+
+.list {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 4px;
+    right: 0;
+}
+
+.list-item {
+    display: inline-block;
+    padding: 0 2.5rem;
+    letter-spacing: 1px;
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+#nav-item1 a {
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem;
+    text-decoration-color: yellow;
+}
+
+.list-item a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.list-item a:visited {
+    color: white;
+}
+
+.list-item a:active {
+    color: red;
+}
+
+.list-item a:hover {
+    /* border-bottom: 2px solid yellow; */
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    text-decoration-thickness: 0.5rem;
+    cursor: pointer;
+}
+
+main img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+main div {
+    text-align: center;
+}
+
+main div:hover {
+    cursor: pointer;
+}
+
+main section#about {
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+main section#contact {
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+@media (max-width:750px) {
+    body {
+        overflow-x: hidden;
+    }
+    h1 {
+        position: relative;
+        padding-top: 5rem;
+        font-size: 4rem;
+        margin: 0 auto;
+        padding-right: 30px;
+    }
+    .list-item {
+        display: block;
+        padding: 10px;
+        line-height: 1.5;
+    }
+    .list-item>a {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .list {
+        left: 0;
+        right: 0;
+        width: 50%;
+        text-align: center;
+        margin: 150px auto;
+    }
+    .list-item a:hover {
+        /* border-bottom: 2px solid yellow; */
+        text-decoration: underline;
+        text-decoration-color: yellow;
+        text-decoration-thickness: 0.5rem;
+        cursor: pointer;
+    }
+}
